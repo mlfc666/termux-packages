@@ -1,10 +1,10 @@
-TERMUX_PKG_HOMEPAGE=https://github.com/microsoft/vscode
-TERMUX_PKG_DESCRIPTION="Visual Studio Code - OSS"
+TERMUX_PKG_HOMEPAGE=https://github.com/VSCodium/vscodium
+TERMUX_PKG_DESCRIPTION="VSCodium - Open Source VS Code Binaries"
 TERMUX_PKG_LICENSE="MIT"
 TERMUX_PKG_MAINTAINER="@licy183"
-TERMUX_PKG_VERSION="1.115.0"
-TERMUX_PKG_SRCURL=git+https://github.com/microsoft/vscode
-TERMUX_PKG_GIT_BRANCH="$TERMUX_PKG_VERSION"
+TERMUX_PKG_VERSION="1.112.01907"
+TERMUX_PKG_SRCURL=git+https://github.com/VSCodium/vscodium
+TERMUX_PKG_GIT_BRANCH="1.112.01907"
 TERMUX_PKG_DEPENDS="electron-for-code-oss, libx11, libxkbfile, libsecret, ripgrep"
 TERMUX_PKG_BUILD_DEPENDS="electron-headers-for-code-oss"
 TERMUX_PKG_ANTI_BUILD_DEPENDS="electron-for-code-oss"
@@ -14,8 +14,8 @@ TERMUX_PKG_NO_STRIP=true
 TERMUX_PKG_HOSTBUILD=true
 # Chromium doesn't support i686 on Linux.
 TERMUX_PKG_EXCLUDED_ARCHES="i686"
-TERMUX_PKG_AUTO_UPDATE=true
-TERMUX_PKG_UPDATE_TAG_TYPE="latest-release-tag"
+TERMUX_PKG_AUTO_UPDATE=false
+TERMUX_PKG_UPDATE_TAG_TYPE="none"
 TERMUX_PKG_ON_DEVICE_BUILD_NOT_SUPPORTED=true
 
 _setup_nodejs_22() {
